@@ -17,6 +17,8 @@ ifneq (, $(findstring STM32F4, $(DEVICE)))
 else \
 ifneq (, $(findstring STM32F7, $(DEVICE)))
     SERIES_FOLDER = STM32F7xx
+ifneq (, $(findstring STM32H7, $(DEVICE)))
+    SERIES_FOLDER = STM32H7xx
 # else
 # ifneq (, $(findstring STM32G0, $(DEVICE)))
 #     SERIES_FOLDER = STM32G0xx
